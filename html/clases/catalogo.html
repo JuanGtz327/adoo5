@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+</head>
+
+<div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">package</span> itzamara<span style="color: #666666">;</span>
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">java.util.ArrayList</span><span style="color: #666666">;</span>
+
+    <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">catalogo</span> <span style="color: #666666">{</span>
+        <span style="color: #008000; font-weight: bold">private</span> <span style="color: #B00040">int</span> id<span style="color: #666666">;</span>
+        <span style="color: #008000; font-weight: bold">private</span> String categoriaProducto<span style="color: #666666">;</span>
+        <span style="color: #008000; font-weight: bold">private</span> ArrayList <span style="color: #666666">&lt;</span>producto<span style="color: #666666">&gt;</span> productos <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> ArrayList<span style="color: #666666">();</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #B00040">int</span> <span style="color: #0000FF">getId</span><span style="color: #666666">()</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">return</span> id<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #B00040">void</span> <span style="color: #0000FF">setId</span><span style="color: #666666">(</span><span style="color: #B00040">int</span> id<span style="color: #666666">)</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">this</span><span style="color: #666666">.</span><span style="color: #7D9029">id</span> <span style="color: #666666">=</span> id<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> String <span style="color: #0000FF">getCategoriaProducto</span><span style="color: #666666">()</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">return</span> categoriaProducto<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #B00040">void</span> <span style="color: #0000FF">setCategoriaProducto</span><span style="color: #666666">(</span>String categoriaProducto<span style="color: #666666">)</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">this</span><span style="color: #666666">.</span><span style="color: #7D9029">categoriaProducto</span> <span style="color: #666666">=</span> categoriaProducto<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> ArrayList<span style="color: #666666">&lt;</span>producto<span style="color: #666666">&gt;</span> <span style="color: #0000FF">getProductos</span><span style="color: #666666">()</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">return</span> productos<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+    
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #B00040">void</span> <span style="color: #0000FF">setProductos</span><span style="color: #666666">(</span>ArrayList<span style="color: #666666">&lt;</span>producto<span style="color: #666666">&gt;</span> productos<span style="color: #666666">)</span> <span style="color: #666666">{</span>
+            <span style="color: #008000; font-weight: bold">this</span><span style="color: #666666">.</span><span style="color: #7D9029">productos</span> <span style="color: #666666">=</span> productos<span style="color: #666666">;</span>
+        <span style="color: #666666">}</span>
+        
+        
+    <span style="color: #666666">}</span>
+    </pre></div>
+</html>
