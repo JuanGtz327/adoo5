@@ -24,20 +24,21 @@
 <strong>Trayectoria principal</strong>:</p>
 
 <ol>
-	<li>El caso de uso comienza cuando se quiere a&ntilde;adir un nuevo producto al sistema.</li>
+	<li>El caso de uso comienza cuando se quiere añadir un nuevo producto al sistema.</li>
 	<li>El administrador selecciona la opción Registrar Nuevo Producto a través de la opción del <em>IU1. Men&uacute; de Opciones del sistema</em>.</li>
 	<li>El administrador introduce los datos y las imágenes del producto a registrar a través de las opciones del <em>IU2. Registrar Nuevo Producto.</em></li>
 	<li>El sistema valida los datos introducidos de acuerdo a las <em>RN1 y RN2 </em>(Alternativa A)</li>
 	<li>El sistema muestra que el producto fue registrado satisfactoriamente a través del <em>IU3. Producto Registrado</em>.</li>
+	<li>Fin del caso de uso.</li>
 </ol>
 
-<p>6.Fin del caso de uso.<br />
 <strong>Trayectorias alternativas</strong>:<br />
 <strong>Alternativa A: </strong>Los datos introducidos no son válidos.<br />
-1.El sistema muestra que el producto no fue registrado a través del <em>IU4. Producto no registrado</em><br />
-2.El sistema regresa a la <em>IU2. Registrar Nuevo Producto</em>.<br />
-3.Fin del caso de uso</p>
-
+<ol>
+	<li>El sistema muestra que el producto no fue registrado a través del <em>IU4. Producto no registrado</em></li>
+	<li>El sistema regresa a la <em>IU2. Registrar Nuevo Producto</em>.</li>
+	<li>Fin del caso de uso.</li>
+</ol>
 
 
 <p><strong>CU2</strong>. Registrar Venta<br />
@@ -52,12 +53,12 @@
 <strong>Precondiciones</strong>: Tener productos vendidos.<br />
 <strong>Postcondiciones</strong>: Nueva venta registrada en el sistema con la información de los productos vendidos para poder ser visualizada.<br />
 <strong>Trayectoria principal</strong>:<br />
-1.El caso de uso comienza cuando un producto fue vendido.<br />
-2.El sistema obtiene la información de los productos vendidos de acuerdo a la <em>RN4.</em> (cantidad, código del producto, nombre, tipo, categoría, total, imágenes y usuario al que fue vendido).<br />
-3.El sistema a&ntilde;ade la información de la venta a la base de datos.<br />
-4.Fin del caso de uso.</p>
-
-
+<ol>
+	<li>El caso de uso comienza cuando un producto fue vendido.</li>
+	<li>El sistema obtiene la información de los productos vendidos de acuerdo a la <em>RN4.</em> (cantidad, código del producto, nombre, tipo, categoría, total, imágenes y usuario al que fue vendido).</li>
+	<li>El sistema añade la información de la venta a la base de datos.</li>
+	<li>Fin del caso de uso.</li>
+</ol>
 
 <p><strong>CU3</strong>. Pagar Producto<br />
 
@@ -79,20 +80,23 @@
 	<li>El sistema valida los datos introducidos de acuerdo a la <em>RN4 </em>(Alternativa A)</li>
 	<li>El sistema de pagos valida los datos bancarios del cliente de acuerdo a la <em>RN5 (Alternativa B)</em></li>
 	<li>El sistema muestra que el pago fue válido a través de la <em>IU6. Pago hecho</em>.</li>
+	<li>Fin del caso de uso.</li>
 </ol>
 
-<p>13. Fin del caso de uso.<br />
+
 <strong>Trayectorias alternativas</strong>:<br />
 <strong>Alternativa A: </strong>Los datos introducidos no son válidos para el sistema.<br />
-1.El sistema muestra que los datos del cliente son inválidos a través del <em>IU7. Datos inválidos.</em><br />
-2.El sistema regresa a la <em>IU5. Información de pago.</em><br />
-3.Fin del caso de uso<br />
+<ol>
+	<li>El sistema muestra que los datos del cliente son inválidos a través del <em>IU7. Datos inválidos.</em></li>
+	<li>El sistema regresa a la <em>IU5. Información de pago.</em></li>
+	<li>Fin del caso de uso</li>
+</ol>
 <strong>Alternativa B: </strong>El sistema de pagos invalida la transacción.<br />
-1.El sistema muestra que el pago fue invalidado de acuerdo a los datos bancarios del cliente a través del <em>IU8. Problema con el pago</em>.<br />
-2.El sistema regresa a la <em>IU5. Información de pago.</em><br />
-3.Fin del caso de uso</p>
-
-
+<ol>
+	<li>El sistema muestra que el pago fue invalidado de acuerdo a los datos bancarios del cliente a través del <em>IU8. Problema con el pago</em>.</li>
+	<li>El sistema regresa a la <em>IU5. Información de pago.</em></li>
+	<li>Fin del caso de uso</li>
+</ol>
 
 <p><strong>CU4</strong>. Mostrar catálogo<br />
 
@@ -106,12 +110,13 @@
 <strong>Precondiciones</strong>: Tener iniciada la sesión en el sistema.<br />
 <strong>Postcondiciones</strong>: La página del catálogo se muestra al cliente.<br />
 <strong>Trayectoria principal</strong>:<br />
-<strong>1.</strong>El caso de uso comienza cuando el cliente quiere visualizar el catálogo de productos.<br />
-<strong>2.</strong>El cliente selecciona <em>Mostrar catálogo</em> a través de la <em>IU1. Mostrar Opciones del Sistema.</em><br />
-<strong>3.</strong>El sistema despliega la información de los productos del catálogo a través de la <em>IU9. Catálogo.</em><br />
-4.Fin del caso de uso.</p>
 
-
+<ol>
+	<li>El caso de uso comienza cuando el cliente quiere visualizar el catálogo de productos.</li>
+	<li>El cliente selecciona <em>Mostrar catálogo</em> a través de la <em>IU1. Mostrar Opciones del Sistema.</em></li>
+	<li>El sistema despliega la información de los productos del catálogo a través de la <em>IU9. Catálogo.</em></li>
+	<li>Fin del caso de uso.</li>
+</ol>
 
 <p><strong>CU5</strong>. Contactar a Administrador<br />
 
@@ -125,13 +130,15 @@
 <strong>Precondiciones</strong>: Tener iniciada la sesión en el sistema.<br />
 <strong>Postcondiciones</strong>: Mensaje enviado al administrador de parte del cliente.<br />
 <strong>Trayectoria principal</strong>:<br />
-1.El caso de uso empieza cuando el cliente quiere contactar al administrador.<br />
-<strong>2.</strong>El cliente selecciona <em>Contactar al administrador </em>a través de la <em>IU1. Mostrar Opciones del Sistema.</em><br />
-<strong>3.</strong>El cliente introduce su información y el mensaje que quiere enviar al administrador a través de la <em>IU10. Contactar al administrador.</em><br />
-<strong>4.</strong>El sistema valida la información introducida de acuerdo a la RN6.<br />
-<strong>5.</strong>El sistema envía la información del mensaje al administrador.<br />
-<strong>6.</strong>El sistema muestra que el mensaje fue enviado satisfactoriamente a través de la <em>IU11. Mensaje enviado</em>.</p>
-
+<ol>
+	<li>El caso de uso empieza cuando el cliente quiere contactar al administrador.</li>
+	<li>El cliente selecciona <em>Contactar al administrador </em>a través de la <em>IU1. Mostrar Opciones del Sistema.</em></li>
+	<li>El cliente introduce su información y el mensaje que quiere enviar al administrador a través de la <em>IU10. Contactar al administrador.</em></li>
+	<li>El sistema valida la información introducida de acuerdo a la RN6.</li>
+	<li>El sistema envía la información del mensaje al administrador.</li>
+	<li>El sistema muestra que el mensaje fue enviado satisfactoriamente a través de la <em>IU11. Mensaje enviado</em>.</li>
+	<li>Fin del caso de uso</li>
+</ol>
 
 
 <p><strong>CU6</strong>. Responder comentarios<br />
@@ -148,16 +155,14 @@
 <strong>Trayectoria principal</strong>:</p>
 
 <ol>
-	<li>El caso de uso comienza cuando se quiere a&ntilde;adir un nuevo producto al sistema.</li>
+	<li>El caso de uso comienza cuando se quiere añadir un nuevo producto al sistema.</li>
 	<li>El administrador selecciona la opción <em>Responder feedback</em> a través de la opción del <em>IU1. Men&uacute; de Opciones del sistema</em>.</li>
 	<li>El administrador selecciona el mensaje que quiere responder mediante la <em>IU12</em>.<em> Seleccionar mensaje del cliente.</em></li>
+	<li>El administrador introduce el mensaje que quiere enviar al cliente a través de la <em>IU13. Responder mensaje del cliente.</em></li>
+	<li>El sistema envía la información del mensaje al cliente.</li>
+	<li>El sistema muestra que el mensaje fue enviado satisfactoriamente a través de la <em>IU11. Mensaje enviado</em>.</li>
+	<li>Fin del caso de uso</li>
 </ol>
-
-<p><strong>4.</strong>El administrador introduce el mensaje que quiere enviar al cliente a través de la <em>IU13. Responder mensaje del cliente.</em><br />
-<strong>5.</strong>El sistema envía la información del mensaje al cliente.<br />
-<strong>6.</strong>El sistema muestra que el mensaje fue enviado satisfactoriamente a través de la <em>IU11. Mensaje enviado</em>.<br />
-<strong>7.</strong>Fin del caso de uso.</p>
-
 
 
 <p><strong>CU7</strong>. Compartir información de producto en redes sociales.<br />
@@ -177,13 +182,11 @@
 	<li>El caso de uso comienza cuando se quiere compartir un producto a través de redes sociales.</li>
 	<li>El cliente selecciona la opción <em>Compartir </em>a través de la opción del <em>IU1. Men&uacute; de Opciones del sistema</em>.</li>
 	<li>El cliente selecciona la red social para compartir el producto a través de <em>IU14</em>.<em> Redes sociales.</em></li>
+	<li>El sistema redirige hacia el sitio web de la red social seleccionada.</li>
+	<li>El cliente introduce el mensaje en la red social seleccionada.</li>
+	<li>El sistema redirige hacia la <em>IU1. Menú de Opciones del Sistema.</em></li>
+	<li>Fin del caso de uso.</li>
 </ol>
-
-<p><strong>4.</strong>El sistema redirige hacia el sitio web de la red social seleccionada.<br />
-<strong>5.</strong>El cliente introduce el mensaje en la red social seleccionada.<br />
-<strong>6.</strong>El sistema redirige hacia la <em>IU1. Men&uacute; de Opciones del Sistema.</em><br />
-7.Fin del caso de uso.</p>
-
 
 
 <p><strong>CU8</strong>. Visualizar comparación de ventas.<br />
@@ -200,14 +203,15 @@
 <strong>Trayectoria principal</strong>:</p>
 
 <ol>
-	<li>El caso de uso comienza cuando se quiere a&ntilde;adir un nuevo producto al sistema.</li>
+	<li>El caso de uso comienza cuando se quiere añadir un nuevo producto al sistema.</li>
 	<li>El administrador selecciona la opción <em>Comparativa</em> a través de la opción del <em>IU1. Men&uacute; de Opciones del sistema</em>.</li>
 	<li>El administrador selecciona dos ventas a través de la <em>IU15. Seleccionar ventas.</em></li>
 	<li>El sistema toma cada dato de la venta de acuerdo a la <em>RN7 </em>para compararlos.</li>
 	<li>El sistema despliega la información en columnas a través de la <em>IU16. Comparativa de ventas</em>.</li>
+	<li>Fin del caso de uso.</li>
 </ol>
 
-<p>6.Fin del caso de uso.</p>
+
 
 
 
@@ -225,13 +229,12 @@
 <strong>Trayectoria principal</strong>:</p>
 
 <ol>
-	<li>El caso de uso comienza cuando se quiere a&ntilde;adir un nuevo producto al sistema.</li>
+	<li>El caso de uso comienza cuando se quiere añadir un nuevo producto al sistema.</li>
 	<li>El administrador selecciona la opción Registrar Nuevo Producto a través de la opción del <em>IU1. Men&uacute; de Opciones del sistema</em>.</li>
 	<li>El administrador introduce los datos y las imágenes del producto a registrar a través de las opciones del <em>IU2. Registrar Nuevo Producto.</em></li>
 	<li>El sistema valida los datos introducidos de acuerdo a la <em>RN2 </em>(Alternativa A)</li>
 	<li>El sistema muestra que el producto fue registrado satisfactoriamente a través del <em>IU3. Producto Registrado</em>.</li>
+	<li>Fin del caso de uso.</li>
 </ol>
-
-<p>6.Fin del caso de uso.</p>
 
 </html>
