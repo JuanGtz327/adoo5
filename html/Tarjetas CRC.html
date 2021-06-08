@@ -1,0 +1,170 @@
+<style type="text/css">
+table, thead, tr, td{
+    border-collapse:collapse;
+    border:1px #000 solid;
+}
+table{
+    width: 80%;
+}
+</style>
+<h1>Tarjetas CRC</h1>
+<table>
+<thead>
+  <tr>
+    <th colspan="2">PRODUCTO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener datos del producto Nombre,Clave del producto, Categoría, Fecha de caducidad, Precio, Imagen, Descripción.<br>Encontrarse en el catálogo<br>Disponibilidad<br>Muestra la disponibilidad del producto para saber si es necesario hacer un pedido cuando esta agotado en Itzamara stor<br></td>
+    <td>Proveedor<br>Venta<br>Catálogo<br>Pedido</td>
+  </tr>
+</tbody>
+</table>
+<table>
+<thead>
+  <tr>
+    <th colspan="2">VENTA</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantiene los datos de venta: Fecha, Tipo de pago, Monto, Comprador.</td>
+    <td>Producto<br>Pago<br>Cliente<br>Pedido</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">PAGO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantiene los datos Monto, Fecha, Comprador, Ticket<br>Estar referenciado a una venta<br>Especificar el tipo de método para procesar la orden</td>
+    <td>Venta<br>Producto<br>Cliente</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">ABONO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener los datos del abono: Fecha, Monto, Número de parcialidad, Comprador.<br>Contar el número de parcialidades pagadas.<br>Contador de abonos: Mantiene el monto restante para completar el pago total.</td>
+    <td>Venta<br>Producto<br>Cliente</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">PEDIDO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantiene los datos del producto, monto, fecha y comprador<br>Disponibilidad<br>Estar referenciado a una venta<br>Especificar tipo de entrega de producto</td>
+    <td>Venta<br>Producto<br>Cliente<br>Proveedor</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">CATÁLOGO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener un registro de todos los productos ya sea que tengan existencias o no<br>Listar los productos con existencia<br>Ordenar los productos por categoría</td>
+    <td>Producto</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">CLIENTE</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener un registro con los datos del usuario generales (nombre, correo, etc.)<br>Mantener un registro de las compras que ha hecho un cliente</td>
+    <td>Ventas<br>Producto</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">PROVEEDOR</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener los datos del proveedor:<br>Nombre, Teléfono, Producto</td>
+    <td>Producto<br>Inventario<br>Catálogo</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">INVENTARIO</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Responsabilidades</td>
+    <td>Colaboradores</td>
+  </tr>
+  <tr>
+    <td>Mantener la cantidad de productos disponibles</td>
+    <td>Proveedor<br>Producto<br>Catálogo</td>
+  </tr>
+</tbody>
+</table>
