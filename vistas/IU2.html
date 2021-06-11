@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar producto | Itzamara store</title>
+    <link type="text/css" rel="stylesheet" href="./estilos/base.css">
+    <link type="text/css" rel="stylesheet" href="./estilos/inicio.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <a href="./index.html"><img src="media/img/logo.png" alt="logo" title="Itzamara Store"></a>
+        </div>
+    </div>
+    <div class="opciones">
+        <div class="boton">
+            <a href="./IU9.html"><p>Catálogo</p></a>
+        </div>
+        <div class="boton">
+            <a href="./IU10.html"><p>Contacto</p></a>
+        </div>
+        <div class="botonIco">
+            <a href="./IU4.html"><p><img src="./media/icons/carro.svg" style="width: 20; height: 20px;"></a>
+        </div>
+        <div class="boton2">
+            <a href="./IU17.html"><p>Iniciar sesión</p></a>
+        </div>
+
+    </div>
+    <div class="sesion">
+
+        <form action="" method="post" style="padding: 15px;">
+            <h1>Registrar nuevo producto</h1>
+            <div class="container">
+                <label for="value"><b>ID interno:</b></label>
+                <input type="number" name="value" value = "1" disabled>
+                <label for="filename"><b>Imagenes del producto:</b></label>
+                <form action="">
+                    <br>
+                    <input type="file" id="files" name="files" multiple accept="image/jpeg, image/png" required ><br>
+                  </form>
+                <label for="uname"><b>Nombre:</b></label>
+                <input type="text" placeholder="Nombre del producto..." name="uname" required size="50">
+          
+                <label for="desc"><b>Descripción</b></label>
+                <input type="text" placeholder="Descripción del producto..." name="desc" required size="280">
+          
+                <label for="desc"><b>Precio</b></label>
+                <input type="number" id="quantity" name="quantity" min="1" >
+                <button type="reset" id="restablecer">Restablecer</button>
+              
+              <button type="submit">Agregar</button>
+            </div>
+          </form> 
+    </div>
+
+    <div class="pie">
+        <p><em>IU2. Registrar nuevo producto</em></p>
+        <p>Equipo 5 ADOO - <strong>2CV14</strong></p>
+    </div>
+</body>
+</html>
