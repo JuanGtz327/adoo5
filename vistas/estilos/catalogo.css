@@ -25,6 +25,7 @@ h1{
     max-width: 200px;
     margin: 15px auto auto auto;
     text-align: center;
+    height: 520px;
 }
 .card>h1{
     font-size: 14pt;
